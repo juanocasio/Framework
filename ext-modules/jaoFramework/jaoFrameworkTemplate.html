@@ -1,12 +1,18 @@
 <div class="jao-title-bar">
-    <div class="jao-logo-area">
-        <img src="/images/abbrlogo.png" alt="" class="jao-icon">
-        <div class="jao-title-area">
-            <p class="jao-logo-title">Juan Ocasio</p>
-            <p class="jao-logo-subtitle">Web Professional</p>
-        </div>   
-    </div>
-    <div class="jao-right-side-controls">
-
+    <div class="row">
+        <div class="jao-logo-area col-sm-6">
+            <img ng-src="{{ iconFile }}" alt="" class="jao-icon">
+            <div class="jao-title-area">
+                <p class="jao-logo-title">{{ title }}</p>
+                <p class="jao-logo-subtitle">{{ subtitle }}</p>
+            </div>
+        </div>
+        <div class="jao-right-side-controls col-sm-6">
+            <div>
+                <button class="btn btn-primary">Button 1</button>
+                <button class="btn btn-success">Button 2</button>
+                <button class="btn btn-warning">Button 3</button>
+            </div>
+        </div>
     </div>
 </div>
